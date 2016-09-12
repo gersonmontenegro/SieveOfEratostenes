@@ -24,7 +24,7 @@ class Primes{
      StartSieve         Start the process to calculate the Sieve of Eratostenes
      parameters         i:Int       Start value. By default 2
                         f:Int       End value
-     type               Int         0 if it's ok, 1 if f is less than i
+     type               String      Empty if f is less than i, else the string with the result of Sieve
      
      */
     func StartSieve(i:Int, f:Int) -> String{
