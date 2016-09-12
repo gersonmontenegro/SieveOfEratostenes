@@ -146,4 +146,5 @@ class Primes{
     
 //  check this out https://iluxonchik.github.io/regular-expression-check-if-number-is-prime/
 //  check this out http://gaussianos.com/la-sorprendente-criba-de-la-parabola/
+//  I figured out an interesting post about this theme http://kelan.io/2015/swfit-sieve-of-eratosthenes/
 }
