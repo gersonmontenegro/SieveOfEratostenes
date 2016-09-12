@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet var txtEnd: UITextField!
-    @IBOutlet var txtResul: UITextField!
+    @IBOutlet var txtResult: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,15 +28,15 @@ class ViewController: UIViewController {
 
     @IBAction func clicIniciarCalculo(sender: UIButton) {
         let startValue = 2
-            if let valorFinal = Int(self.txtEnd.text!){
+            if let finalValue = Int(self.txtEnd.text!){
                 let criba:Primes = Primes()
-                let r = criba.StartSieve(startValue, f: valorFinal)
+                let r = criba.StartSieve(startValue, f: finalValue)
                 switch r{
                     case "":
                         Utilities.Alert("Initial value must be less than final")
                         break
                     default:
-                        self.txtResul.text = r
+                        self.txtResult.text = r
                         break
                 }
             }else{
