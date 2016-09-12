@@ -110,8 +110,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="txtFin" destination="7ie-Dr-V3W" id="V8o-sH-454"/>
-                        <outlet property="txtResultado" destination="8bd-ZB-lor" id="L6E-Kf-1gU"/>
+                        <outlet property="txtEnd" destination="7ie-Dr-V3W" id="0tv-Yy-ZBN"/>
+                        <outlet property="txtResult" destination="8bd-ZB-lor" id="17S-k6-O1R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

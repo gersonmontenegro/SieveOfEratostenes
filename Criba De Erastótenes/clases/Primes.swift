@@ -19,34 +19,24 @@ class Primes{
     var dictData: [NSDictionary] = []   //All values and it's state
     var numCurrentValue:Int = 0         //Number to start every iteration
     var numCurrentIndex:Int = 0         //Index in dictData to current value
-    var refTxtResult:UITextField = UITextField()    //Reference to text field to put the result
-    
-    /*
-     DefineTxtResult        Establishes the text field where the result will be show
-     parameters             txt:UITextField     Reference to the text field
-     type
-     */
-    func DefineTxtResult(txt:UITextField){
-        self.refTxtResult = txt
-    }
     
     /*
      StartSieve         Start the process to calculate the Sieve of Eratostenes
      parameters         i:Int       Start value. By default 2
                         f:Int       End value
-     type               Int         0 if it's ok, 1 if f is less than i
+     type               String      Empty if f is less than i, else the string with the result of Sieve
      
      */
-    func StartSieve(i:Int, f:Int) -> Int{
+    func StartSieve(i:Int, f:Int) -> String{
         self.numEndValue = f
         self.numStartValue = i
         if (self.numEndValue > self.numStartValue) {
             self.MakeValuesDictionary()
             self.UpdateValues()
-            self.refTxtResult.text = self.WalkThrough()
-            return 0
+            //self.refTxtResult.text = self.WalkThrough()
+            return self.WalkThrough()
         }else{
-            return 1 //start is bigger than end
+            return "" //start is bigger than end
         }
     }
     
